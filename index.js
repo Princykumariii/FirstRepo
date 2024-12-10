@@ -7,4 +7,7 @@ function checkPrime(num){
     }
     return true
 }
-console.log(checkPrime(6))
+console.log(checkPrime(6)
+SHA256:5/HZdBC8XYkSzDAf6YrG8rQGCMRI14O+QzDjkDt19hE princyaanand293@gmail.com
+eval "$(SHA256:5/HZdBC8XYkSzDAf6YrG8rQGCMRI14O+QzDjkDt19hE princyaanand293@gmail.com)"
+ssh-add ~/.ssh/id_ed25519

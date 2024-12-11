@@ -1,0 +1,7 @@
+let input = ["electronics", "clothing", "electronics", "toys", "clothing", "toys", "toys"]
+
+let ans = input.sort((a,b)=>{
+    return b-a
+
+});
+console.log(ans)

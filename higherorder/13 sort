@@ -3,3 +3,5 @@ const itemCount = items.reduce((accumulator,item)=>{accumulator[item]=(accumulat
 return accumulator;
 },{});
 console.log(itemCount)
+
+

@@ -1,7 +1,5 @@
-let input = ["electronics", "clothing", "electronics", "toys", "clothing", "toys", "toys"]
-
-let ans = input.sort((a,b)=>{
-    return b-a
-
-});
-console.log(ans)
+const items = ["electronics", "clothing", "electronics", "toys", "clothing", "toys", "toys"]
+const itemCount = items.reduce((accumulator,item)=>{accumulator[item]=(accumulator[item] || 0)+1;
+return accumulator;
+},{});
+console.log(itemCount)

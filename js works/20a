@@ -1,0 +1,15 @@
+let value = prompt("Enter count",10);
+
+function createCounter(count){
+    let id = setInterval(()=>{
+        console.log(count);
+        count--;
+
+        if (count==0){
+            console.log("Count Complete")
+            clearInterval(id)
+        }
+    },1000)
+    console.log(id)
+}
+createCounter(value)

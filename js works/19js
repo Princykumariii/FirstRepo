@@ -1,0 +1,12 @@
+let  age =20;
+function displayAge(){
+    console.log(" displayAge:",age);
+    
+}
+function changeAge(){
+    let age = 28;
+    console.log("changeAge",age)
+}
+displayAge();
+changeAge();
+    

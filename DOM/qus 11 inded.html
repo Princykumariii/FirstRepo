@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h1 id="name">Welcome to the DOM</h1>
+     <p> My Bonnie lies over the ocean.</p>
+    <p>Hellooo girls of empower her</p>
+    <P>we wii be on js platform</P>
+      <div class="container">
+    </div>  
+    
+     
+</body>
+<script>
+   
+    
+   let nametag = document.getElementsByTagName("name")
+   let paras = Array.from(document.getElementsByTagName("h1"))
+    
+            
+        
+    let container = document.querySelector(".container")
+    
+  nametag.textcontent = "Welcome to the DOM World"
+  paras.forEach((p)=>{
+  p.style.color = "blue"
+  p.style.backgroundColor = "yellow"
+   })
+     container.style.backgroundColor = "yellow"
+</script>
+</html>
+

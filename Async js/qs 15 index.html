@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="runcode">Run</button>
+</body>
+<script>
+    let value = prompt("Enter count",10);
+    
+    function createCount(count){
+        let id =setInterval(()=>{
+            console.log(count);
+        count--;
+       
+        if (count==0){
+            console.log("count completed")
+            clearInterval(id)
+        }
+    },1000)
+    console.log(id)
+}
+createCount(value)
+</script>
+</html>

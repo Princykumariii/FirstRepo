@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="runcode()">RUN</button>
+</body>
+<script>
+    function runcode(){
+    loading()
+    setInterval(loading,1000);
+    setInterval(loaded,5000)
+    }
+    function loading(){
+        console.log("Loading..")
+    }
+    function loaded(){
+        console.log("Loaded successfully!")
+    }
+</script>
+</html>

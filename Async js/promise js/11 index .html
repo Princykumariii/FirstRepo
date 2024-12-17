@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function printTodo(obj){
+        console.log(obj.title)
+
+    }
+    function registerUser(){
+        return new Promise((resolve,reject) =>{
+            setTimeout(() =>{
+                resolve(`userId:123`);
+            }, 1000);
+        })
+    }
+    registerUser()
+    .then(() =>SendVerification())
+    .then(() => loginUser())
+    .then(() => displayMessage())
+    .catch((err) =>console.log("something went wrong"))
+
+    function sendVerification(){
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("verified");
+            });
+        });
+    }
+        
+        
+</script>
+</html>

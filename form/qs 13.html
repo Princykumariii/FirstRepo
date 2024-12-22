@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="Add Paragraph">btn1</button>
+    <button id="Remove Last Paragraph">btn2</button>
+
+</body>
+<script>
+    const container = document.getElementById('userContainer');
+const newElement = document.createElement('div');
+newElement.textContent = 'New User';
+
+
+container.append(newElement, ' - User added');
+
+container.appendChild(newElement); 
+
+   const child = document.getElementById('childElement');
+child.parentNode.removeChild(child);
+
+child.remove(); 
+   </script>
+
+</html>

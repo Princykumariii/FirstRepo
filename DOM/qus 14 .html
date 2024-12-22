@@ -8,22 +8,26 @@
 <body>
   <p id="message">Original Message</p>
   <button id="textButton">Change Text</button>
-  <br><br>
-  <div id="box" style="width: 100px; height: 100px; background-color: lightgray;"></div>
   <button id="colorButton">Change Background</button>
 
+  <br><br>
+  <div id="box" 
+  style="width: 100px; height: 100px; background-color: lightgray;"></div>
+  
+
   <script>
-    // JavaScript code with bugs
-    const para = document.querySelector('#massage'); // Incorrect id
-    const textButton = document.getElementByName('textButton'); // Incorrect method
-    textButton.addClickEventListener(() => { // Incorrect method name
-      para.contentText = 'New Message'; // Incorrect property
-    });
+    
+   
+    const button = document.getElementById('textButton');
+    button.addEventListener("click",function(){
+        let messagetag =document.getElementById("message")
+     messagetag.textcontent = "New Message";
+    }) 
 
     const box = document.getElementById('box');
     const colorButton = document.getElementById('colorButton');
-    colorButton.addEventListener('click', () => {
-      box.style.backgroundColor = 'blue'; // Typo in 'style'
+    colorButton.addEventListener('click',function () {
+      box.style.backgroundColor = 'blue'; 
     });
   </script>
 </body>

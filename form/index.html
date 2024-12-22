@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    
+    <form id="form">
+        
+    
+    
+    <input id="username" type ="text" placeholder ="Enter user name"/> 
+    <input id="email" type ="email" placeholder ="Enter Email"/>
+    <input id="password" type ="password" placeholder ="Enter Password"/>
+    <input id="url" type="text" placeholder="Enter Image Url"/>
+    <input type ="submit" value="signup" />
+   
+<button id="removeBtn">remove user</button>
+<div id="cont"></div>
+</body>
+<script>
+    let form = document.getElementById("form");
+    form.addEventListener("submit",function () {
+event.preventDefault()
+let name=form.username.value;
+let email = form.email.value;
+let password = form.password.value;
+let userobj ={name,email,password};
+console.log (userobj)
+let nameTag = document.createElement("h3");
+ nameTag.textContent = `name:${name}`;
+let emailTag = document.createElement("h3");
+  emailTag.textContent = `email:${email}`;
+  let userImg = document.createElement("Img");
+   userImg.src = url;
+   userImg.setAttribute("id","userImg")
+  let cont =  document.getElementById("cont");
+  cont. append( userImg,nameTag,emailTag)
+    });
+    let removeBtn = document.getElementById("removeBtn");
+    removeBtn.addEventListener("click",function(){
+        let obj = {name :"Alice",age :25};
+        let ans = JSON.stringify(obj)
+        console.log("original obj",obj)
+        console.log("stringify obj",ans)
+        let ans2 = JSON.parse(ans)
+        console.log("parsed obj",ans2)
+    })
+
+   
+</script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="my form">
+    <input id="colorname" placeholder ="Enter color name"/> 
+    <input id="Text content" placeholder ="Enter Text content"/> 
+
+    <button id="btn">Change Background</button>
+    <button id="btn2">Update Text</button>
+    </form>
+
+    <div id="box" style="width: 100px; height: 100px; background-color: blue;"></div>
+   
+</body>
+<script>
+    let name=form.colorname.value;
+ let button = document.getElementById("btn");
+ button.addEventListener("Click",function(){
+    alert ("invalid color name!")
+  
+  });
+  let box = document.getElementById('box');
+  box.addEventListener('mouseover', function() {
+    box.style.backgroundColor = 'green'; // Cha
+
+  box.addEventListener('mouseout', function() {
+    box.style.backgroundColor = 'blue'; 
+    
+  });
+ })
+</script>
+</html>

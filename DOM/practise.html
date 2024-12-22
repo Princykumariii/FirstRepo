@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="price">Price is 1500</h1>
+    <button id="btn">Apply 10% discount</button>
+    <button id="btn2">Remove dicount</button>
+    <h1>this is discounted price</h1> 
+
+    <h3 class="second">This is first h3 tag</h3>
+    <h3 class="second">This is second h3 tag</h3>
+</body>
+ <script>
+    // event listner
+    // 
+    // let button =document.getElementsByTagName("button")
+    // console.log(button)
+    
+    // element.addEventListner('event',function);
+     //console.log (button)
+     let button = document.getElementById("btn")
+   button.addEventListener('click', function() {
+    let pricetag = document.getElementById("price");
+    // console.log(pricetag)
+    pricetag.textContent = "New price is 1350";
+     pricetag.style.backgroundColor = "teal"
+     pricetag.style.color = "yellow";
+
+     })
+     let button2 = document.getElementById('btn2');
+     button2.addEventListener('click', function() {
+        alert ("discount is applying")
+        let pricetag = document.getElementById("price");
+       pricetag.textContent = "Original price is 1500"
+        pricetag.style.backgroundColor = "black"
+     pricetag.style.color = "yellow";
+
+     })
+    // catching elements by queryselector - gives first single element
+    //  let element1 = document.querySelector("#price")//by id
+    //  console.log(element1)
+    //  let element2 = document.querySelectorAll(".second")//by tag
+    //  console.log(element2)
+
+    //  catching element by class name
+    // let h3tags = document.getElementsByClassName("second")
+    // console.log (h3tags)
+    // for (let el of h3tags)
+    // {
+    //  el.textContent = "Hii"
+    // }
+
+//  catching the element by tag name
+// let h1tags = document.getElementsByTagName("h1");
+// console.log (h1tags);
+//   h1tags[0].textContent = "Hello";
+//   h1tags[1].textContent = "World";
+//   for (let i =0;i<h1tags.length;i++){
+//     h1tags[i].textContent = "New price is 2500"
+//   }
+
+    // cathing the element by id name/id is unique in nature;
+    // let pricetag = document.getElementById("price")
+    // console.log(pricetag)
+    // pricetag.textContent = "New price is 2500";
+    // pricetag.style.color = "red";
+</script>
+</html>   

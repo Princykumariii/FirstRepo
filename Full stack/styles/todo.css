@@ -1,0 +1,39 @@
+#form select {
+    background-color: rgb(193, 137, 246);
+    width: 90%;
+    height: 20px;
+    height: 30px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 900;
+  }
+  
+  select{
+      margin-bottom: 20px;
+      height: 30px;
+  }
+  
+  /* #form input::placeholder {
+ 
+}
+   */
+  .pending {
+    border: 1px solid red;
+    border: 1px solid blueviolet;
+    animation: blinker 2s infinite;
+  }
+  
+  @keyframes blinker {
+    0% {
+      border: 1px dotted red;
+      border: 2px dotted blueviolet;
+    }
+    50% {
+      border: transparent;
+      border: 1px solid blueviolet;
+    }
+    100% {
+      border: 1px dotted red;
+      border: 2px dotted blueviolet;
+    }
+  }
